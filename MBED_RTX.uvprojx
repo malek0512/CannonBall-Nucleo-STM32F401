@@ -175,7 +175,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -363,9 +363,9 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>--gnu --no_rtti </MiscControls>
-              <Define> TARGET_NUCLEO_F401RE,  TARGET_M4,  TARGET_CORTEX_M,  TARGET_STM,  TARGET_STM32F4,  TARGET_STM32F401RE,  TOOLCHAIN_ARM_MICRO,  TOOLCHAIN_ARM,  __CORTEX_M4,  ARM_MATH_CM4,  __FPU_PRESENT=1,  MBED_BUILD_TIMESTAMP=1424699455.41,  __MBED__=1,  TARGET_FF_ARDUINO,  TARGET_FF_MORPHO,  __ASSERT_MSG, </Define>
+              <Define>TARGET_NUCLEO_F401RE,  TARGET_M4,  TARGET_CORTEX_M,  TARGET_STM,  TARGET_STM32F4,  TARGET_STM32F401RE,  TOOLCHAIN_ARM_MICRO,  TOOLCHAIN_ARM,  __CORTEX_M4,  ARM_MATH_CM4,  __FPU_PRESENT=1,  MBED_BUILD_TIMESTAMP=1424699455.41,  __MBED__=1,  TARGET_FF_ARDUINO,  TARGET_FF_MORPHO,  __ASSERT_MSG,</Define>
               <Undefine></Undefine>
-              <IncludePath>  .;  mbed-rtos;  mbed-rtos/rtos;  mbed-rtos/rtx;  mbed-rtos/rtx/TARGET_CORTEX_M;  mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M4;  mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M4/TOOLCHAIN_ARM;  mbed;  mbed/TARGET_NUCLEO_F401RE;  mbed/TARGET_NUCLEO_F401RE/TARGET_STM;  mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4;  mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4/TARGET_NUCLEO_F401RE;  mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_ARM_MICRO</IncludePath>
+              <IncludePath>.;  mbed-rtos;  mbed-rtos/rtos;  mbed-rtos/rtx;  mbed-rtos/rtx/TARGET_CORTEX_M;  mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M4;  mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M4/TOOLCHAIN_ARM;  mbed;  mbed/TARGET_NUCLEO_F401RE;  mbed/TARGET_NUCLEO_F401RE/TARGET_STM;  mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4;  mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4/TARGET_NUCLEO_F401RE;  mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_ARM_MICRO</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -530,7 +530,7 @@
             
               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_ARM_MICRO/mbed.ar
             
-            </Misc>
+</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings></DisabledWarnings>
           </LDads>

@@ -153,6 +153,6 @@
             
               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_ARM_MICRO/mbed.ar
             
-            --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\build\MBED_RTX.map" -o .\build\MBED_RTX.axf
