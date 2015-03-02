@@ -5,6 +5,7 @@ Serial usb(SERIAL_TX, SERIAL_RX);
 
 DigitalOut myled(LED1);
 DigitalIn mybutton(USER_BUTTON);
+
 PwmOut STEERING_SERVO_PIN(D5); // set servo-motor connector for steering
 PwmOut THROTTLE_SERVO_PIN(D6); // set servo-motor connector for throttle
 DigitalOut led(D13);
@@ -103,10 +104,13 @@ void USB_recieve(void const *argument)
 {
 	while(true)
 		{
+			if(usb.readable())
+			{
 		time_data_check=timer.read_us();
 		usb.scanf("%d",&steeringTarget);
 		usb.scanf("%d",&throttleTarget);
 		last_time_data_check = time_data_check;
+			}
 			
 		 if (emergency || (time_data_check - last_time_data_check > 1000))
 			 {
