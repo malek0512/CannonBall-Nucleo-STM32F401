@@ -5,13 +5,13 @@
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4/TARGET_NUCLEO_F401RE/objects.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/cmsis.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/stm32f4xx.h
-.\build\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h
+.\build\main.o: mbed/TARGET_NUCLEO_F401RE/stm32f401xe.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/core_cm4.h
 .\build\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/core_cmInstr.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/core_cmFunc.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/core_cm4_simd.h
-.\build\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.3.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\build\main.o: mbed/TARGET_NUCLEO_F401RE/system_stm32f4xx.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/stm32f4xx_hal.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/stm32f4xx_hal_conf.h
 .\build\main.o: mbed/TARGET_NUCLEO_F401RE/stm32f4xx_hal_rcc.h
