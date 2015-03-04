@@ -1,5 +1,6 @@
 --cpu Cortex-M4.fp
 ".\build\main.o"
+".\build\serialdriver.o"
 ".\build\svc_table.o"
 ".\build\rt_semaphore.o"
 ".\build\rt_event.o"

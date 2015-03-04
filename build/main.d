@@ -143,3 +143,6 @@
 .\build\main.o: mbed-rtos/rtos/Mail.h
 .\build\main.o: mbed-rtos/rtos/MemoryPool.h
 .\build\main.o: mbed-rtos/rtos/Queue.h
+.\build\main.o: SerialDriver.h
+.\build\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\cstdarg
+.\build\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

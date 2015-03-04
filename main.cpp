@@ -11,11 +11,11 @@ Projet CONNONBALL using NUCLEO STM32F401RE
 //Include Library
 #include "mbed.h"
 #include "rtos.h"
+#include "SerialDriver.h"
 
 
 //IO definition
-Serial usb(SERIAL_TX, SERIAL_RX);
-
+SerialDriver usb(USBTX, USBRX,2,2);
 
 InterruptIn detect1(D2);
 InterruptIn detect2(D3);
@@ -75,7 +75,7 @@ void USB_recieve(void const *argument) {
 	usb.baud(115200);
 	//usb.printf("USB reception started\n");
 	//led = false;
-	while (usb.getc() != 255);
+	//while (usb.getc() != 255);
 	
 	//led = true;
 	//usb.printf("OK\n");
@@ -85,9 +85,9 @@ void USB_recieve(void const *argument) {
 			time_data_check=timer1.read_ms();
 			
 			steeringTarget = usb.getc();
-			usb.putc(steeringTarget);
-			
 			throttleTarget = usb.getc();
+			
+			usb.putc(steeringTarget);
 			usb.putc(throttleTarget);
 			
 			car_control_thread->signal_set(0x01); //there is a data
@@ -120,12 +120,12 @@ void car_emergency(void const *argument) {
 void car_control(void const *argument) {
 	STEERING_SERVO_PIN.write(90/255); //initialisation
 	THROTTLE_SERVO_PIN.write(91/255);
-	time_data_check=timer1.read_us();
 	timer1.start();
+	time_data_check = timer1.read_us();
 	//usb.printf("Car control started\n");
 	USB_receive_thread = new Thread(USB_recieve);
 	car_emergency_thread = new Thread(car_emergency);
-	car_emergency_thread->set_priority(osPriorityHigh); //high level of priority (REAL TIME)
+	//car_emergency_thread->set_priority(osPriorityHigh); //high level of priority (REAL TIME)
 	
 	while(1) {
 		Thread::signal_wait(0x01); //If there is a data;

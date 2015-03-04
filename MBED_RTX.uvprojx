@@ -545,6 +545,11 @@
               <FileType>8</FileType>
               <FilePath>.\main.cpp</FilePath>
             </File>
+            <File>
+              <FileName>SerialDriver.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\SerialDriver.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
