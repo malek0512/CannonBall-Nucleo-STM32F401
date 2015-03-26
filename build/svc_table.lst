@@ -92,13 +92,13 @@ ARM Macro Assembler    Page 2
    51 00000004         SVC_End
    52 00000004         
    53 00000004                 END
-Command Line: --debug --split_ldm --xref --cpu=Cortex-M4.fp --apcs=interwork --
-depend=.\build\svc_table.d -o.\build\svc_table.o -IC:\Users\jérôme\Documents\Gi
-tHub\Nucleo-STM32F401-mbed-et-rtos\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP
-\2.3.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\ARM\CMSIS\Include
- --predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVI
-SION_VERSION SETA 513" --predefine="STM32F401xE SETA 1" --list=.\build\svc_tabl
-e.lst mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M4/TOOLCHAIN_ARM/SVC_Table.s
+Command Line: --debug --split_ldm --xref --diag_suppress=9931 --cpu=Cortex-M4.f
+p --apcs=interwork --depend=.\build\svc_table.d -o.\build\svc_table.o -IG:\work
+space\CannonBall-Nucleo-STM32F401\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\
+2.3.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\ARM\CMSIS\Include 
+--predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVIS
+ION_VERSION SETA 514" --predefine="STM32F401xE SETA 1" --list=.\build\svc_table
+.lst mbed-rtos/rtx/TARGET_CORTEX_M/TARGET_M4/TOOLCHAIN_ARM/SVC_Table.s
 
 
 
